@@ -6,7 +6,7 @@ defmodule UserPointsWeb.UserController do
   when the query was made.
   """
   def index(conn, _params) do
-    {users, timestamp} = {[], nil} # TODO: Get users and timestamp
+    {users, timestamp} = UserPoints.PointsHandler.users_with_points_greater_than_max()
 
     render(conn, "index.json", users: users, timestamp: timestamp)
   end
