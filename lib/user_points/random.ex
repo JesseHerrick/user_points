@@ -8,7 +8,7 @@ defmodule UserPoints.Random do
   @doc """
   Generates a random number between 0 and `@max_number`, which is currently 100.
   """
-  def random_points do
+  def random_point do
     :random.uniform(@max_number + 1) - 1
   end
 end
