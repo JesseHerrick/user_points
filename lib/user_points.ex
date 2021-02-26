@@ -1,9 +1,9 @@
 defmodule UserPoints do
   @moduledoc """
-  UserPoints keeps the contexts that define your domain
-  and business logic.
-
-  Contexts are also responsible for managing your data, regardless
-  if it comes from the database, an external API or others.
+  UserPoints is an exercise in building an API endpoint to query for no more
+  than two users with points more than a random `max_number` set every minute in
+  the `PointsHandler` GenServer. It periodically resets the random points on 100
+  different users along with the global `max_number` within the `PointsHandler`
+  GenServer.
   """
 end
