@@ -62,9 +62,9 @@ defmodule UserPoints.PointsHandler do
 
   @impl true
   def handle_info(:reset_max_number_and_points, {_, timestamp}) do
-    Accounts.reset_all_points()
-
     schedule_reset_max_number_and_points()
+
+    Accounts.reset_all_points()
 
     {:noreply, {Random.random_point(), timestamp}}
   end
