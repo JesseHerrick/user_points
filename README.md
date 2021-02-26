@@ -32,3 +32,9 @@ Tests may be run with `mix test`.
 ## Code Documentation
 
 Documentation can be found throughout the repo. To build and view the docs locally, run the following (after installing all dependencies): `mix docs && open doc/index.html`.
+
+## Live Dashboard
+
+UserPoints is already configured with Phoenix Live Dashboard by default. To view
+it on dev, open up [`http://localhost:4000/dashboard`](http://localhost:4000/dashboard) in your browser. The
+dashboard is not compiled in a production environment.
